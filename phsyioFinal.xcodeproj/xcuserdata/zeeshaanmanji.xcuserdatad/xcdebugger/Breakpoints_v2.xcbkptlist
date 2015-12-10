@@ -23,8 +23,8 @@
                   symbolName = "-[ViewController usernameField]"
                   moduleName = "phsyioFinal"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeeshaanmanji/Downloads/phsyioFinal-4-2/phsyioFinal/ViewController.h"
-                  timestampString = "471079299.618667"
+                  urlString = "file:///Users/zeeshaanmanji/Desktop/phsyioFinal/phsyioFinal/ViewController.h"
+                  timestampString = "469954910.361426"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "12"
@@ -38,8 +38,8 @@
                   symbolName = "-[ViewController setUsernameField:]"
                   moduleName = "phsyioFinal"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeeshaanmanji/Downloads/phsyioFinal-4-2/phsyioFinal/ViewController.h"
-                  timestampString = "471079299.619343"
+                  urlString = "file:///Users/zeeshaanmanji/Desktop/phsyioFinal/phsyioFinal/ViewController.h"
+                  timestampString = "469954910.362016"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -56,11 +56,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "phsyioFinal/Accelerometer.m"
-            timestampString = "471080639.465394"
+            timestampString = "470013746.075886"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "236"
-            endingLineNumber = "236"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
             landmarkName = "-outputRotationData:"
             landmarkType = "5">
          </BreakpointContent>
@@ -72,11 +72,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "phsyioFinal/Accelerometer.m"
-            timestampString = "471080639.465394"
+            timestampString = "470013746.075886"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "255"
-            endingLineNumber = "255"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
             landmarkName = "-outputRotationData:"
             landmarkType = "5">
          </BreakpointContent>
@@ -88,11 +88,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "phsyioFinal/Accelerometer.m"
-            timestampString = "471080639.465394"
+            timestampString = "470013746.075886"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "279"
-            endingLineNumber = "279"
+            startingLineNumber = "264"
+            endingLineNumber = "264"
             landmarkName = "-outputRotationData:"
             landmarkType = "5">
          </BreakpointContent>
@@ -104,11 +104,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "phsyioFinal/Accelerometer.m"
-            timestampString = "471080639.465394"
+            timestampString = "470013746.075886"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "321"
-            endingLineNumber = "321"
+            startingLineNumber = "306"
+            endingLineNumber = "306"
             landmarkName = "-start:"
             landmarkType = "5">
          </BreakpointContent>
@@ -120,11 +120,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "phsyioFinal/Accelerometer.m"
-            timestampString = "471080639.465394"
+            timestampString = "470013746.075886"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "322"
-            endingLineNumber = "322"
+            startingLineNumber = "307"
+            endingLineNumber = "307"
             landmarkName = "-start:"
             landmarkType = "5">
          </BreakpointContent>
@@ -136,11 +136,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "phsyioFinal/Accelerometer.h"
-            timestampString = "471067593.514241"
+            timestampString = "470001482.54341"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "accz"
             landmarkType = "19">
             <Locations>
@@ -151,12 +151,12 @@
                   symbolName = "-[Accelerometer accz]"
                   moduleName = "phsyioFinal"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeeshaanmanji/Downloads/phsyioFinal-4-2/phsyioFinal/Accelerometer.h"
-                  timestampString = "471079299.662156"
+                  urlString = "file:///Users/zeeshaanmanji/Desktop/phsyioFinal/phsyioFinal/Accelerometer.h"
+                  timestampString = "469954910.3696"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
                   offsetFromSymbolStart = "20">
                </Location>
                <Location
@@ -166,8 +166,8 @@
                   symbolName = "-[Accelerometer setAccz:]"
                   moduleName = "phsyioFinal"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeeshaanmanji/Downloads/phsyioFinal-4-2/phsyioFinal/Accelerometer.h"
-                  timestampString = "471079299.662439"
+                  urlString = "file:///Users/zeeshaanmanji/Desktop/phsyioFinal/phsyioFinal/Accelerometer.h"
+                  timestampString = "469954910.370133"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -184,11 +184,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "phsyioFinal/Accelerometer.h"
-            timestampString = "471067593.514241"
+            timestampString = "470001482.54341"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "accy"
             landmarkType = "19">
             <Locations>
@@ -199,12 +199,12 @@
                   symbolName = "-[Accelerometer accy]"
                   moduleName = "phsyioFinal"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeeshaanmanji/Downloads/phsyioFinal-4-2/phsyioFinal/Accelerometer.h"
-                  timestampString = "471079299.664103"
+                  urlString = "file:///Users/zeeshaanmanji/Desktop/phsyioFinal/phsyioFinal/Accelerometer.h"
+                  timestampString = "469954910.372793"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
                   offsetFromSymbolStart = "20">
                </Location>
                <Location
@@ -214,8 +214,8 @@
                   symbolName = "-[Accelerometer setAccy:]"
                   moduleName = "phsyioFinal"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeeshaanmanji/Downloads/phsyioFinal-4-2/phsyioFinal/Accelerometer.h"
-                  timestampString = "471079299.664447"
+                  urlString = "file:///Users/zeeshaanmanji/Desktop/phsyioFinal/phsyioFinal/Accelerometer.h"
+                  timestampString = "469954910.373341"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -232,11 +232,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "phsyioFinal/Accelerometer.m"
-            timestampString = "471080639.465394"
+            timestampString = "470013746.075886"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "367"
-            endingLineNumber = "367"
+            startingLineNumber = "352"
+            endingLineNumber = "352"
             landmarkName = "-read"
             landmarkType = "5">
          </BreakpointContent>
@@ -248,43 +248,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "phsyioFinal/Accelerometer.m"
-            timestampString = "471073891.386335"
+            timestampString = "470013746.075886"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "189"
             endingLineNumber = "189"
-            landmarkName = "-outputRotationData:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "phsyioFinal/Accelerometer.m"
-            timestampString = "471073725.112979"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
-            landmarkName = "-outputAccelertionData:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "phsyioFinal/Accelerometer.m"
-            timestampString = "471080281.97349"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "221"
-            endingLineNumber = "221"
             landmarkName = "-outputRotationData:"
             landmarkType = "5">
          </BreakpointContent>

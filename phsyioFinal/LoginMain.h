@@ -7,20 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <sqlite3.h>
 
 @interface LoginMain : UIViewController
-{
-    sqlite3 *contactDB;
-    
-    UITextField *usernameField;
-    UITextField *passwordField;
-    UITextField *confirmPassword;
-    
-    UILabel *status;
-    
-    NSString *databasePath;
-}
 
 @property (weak, nonatomic) IBOutlet UITextField *username;
 

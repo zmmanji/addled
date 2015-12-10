@@ -18,14 +18,12 @@ double currentrotz;
 double count;
 double count2;
 double count3;// for bicep
-float count4; // for arm rotation
+double count4; // for arm rotation
 int number;
-float i=1;
 
 
 @interface Accelerometer : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *accx;
-- (IBAction)demo:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *accy;
 @property (weak, nonatomic) IBOutlet UILabel *accz;
 @property (weak, nonatomic) IBOutlet UILabel *count4;
@@ -38,8 +36,6 @@ float i=1;
 @property (weak, nonatomic) IBOutlet UIButton *Back2;
 - (IBAction)Finish2:(id)sender;
 - (IBAction)Back2:(id)sender;
-@property (weak, nonatomic) IBOutlet UITextField *Target;
-@property (weak, nonatomic) IBOutlet UILabel *TargetLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *maxx;
 

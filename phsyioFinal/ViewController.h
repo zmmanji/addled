@@ -7,25 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <sqlite3.h>
 
+@interface ViewController : UIViewController 
+@property (weak, nonatomic) IBOutlet UITextField *usernameField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
 
-@interface ViewController : UIViewController
-{
-    sqlite3 *contactDB;
-    
-    UITextField *usernameField;
-    UITextField *passwordField;
-    UITextField *confirmPassword;
-    
-    UILabel *status;
-    
-    NSString *databasePath;
-}
-@property (retain, nonatomic) IBOutlet UITextField *usernameField;
-@property (retain, nonatomic) IBOutlet UITextField *passwordField;
-
-@property (retain, nonatomic) IBOutlet UITextField *confirmPassword;
+@property (weak, nonatomic) IBOutlet UITextField *confirmPassword;
 
 @property (weak, nonatomic) IBOutlet UIButton *registerBtn;
 @property (weak, nonatomic) IBOutlet UITextField *FirstName;
@@ -36,7 +23,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *AccountType;
 
 - (IBAction)RegisterUser:(id)sender;
-@property (strong, nonatomic) IBOutlet UILabel *status;
 
 - (IBAction)BackgroundTouch:(id)sender;
 

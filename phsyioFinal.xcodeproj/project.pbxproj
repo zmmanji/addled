@@ -7,15 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		689A805F1C15848E002A8F0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689A805E1C15848E002A8F0B /* UIKit.framework */; };
-		689A80611C15849D002A8F0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689A80601C15849D002A8F0B /* Foundation.framework */; };
-		689A80631C1584A7002A8F0B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689A80621C1584A7002A8F0B /* CoreGraphics.framework */; };
-		689A80651C1584C5002A8F0B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 689A80641C1584C5002A8F0B /* libsqlite3.0.dylib */; };
-		689A80671C1584C9002A8F0B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 689A80661C1584C9002A8F0B /* libsqlite3.dylib */; };
-		68A380401C163B5900AE6F2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68A3803F1C163B5900AE6F2C /* InfoPlist.strings */; };
-		68A380421C16415100AE6F2C /* IMG_0683.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 68A380411C16415100AE6F2C /* IMG_0683.JPG */; };
-		68A380441C1641C600AE6F2C /* IMG_0681.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 68A380431C1641C600AE6F2C /* IMG_0681.JPG */; };
-		68F0F7601C15984400649F95 /* SQLiteDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68F0F75F1C15984400649F95 /* SQLiteDemo-Info.plist */; };
 		A40B95631C0294EF007C0D4D /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B95621C0294EF007C0D4D /* Background.jpg */; };
 		A40B95651C02ABC6007C0D4D /* Image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A40B95641C02ABC6007C0D4D /* Image1.jpg */; };
 		A40B95671C02C74F007C0D4D /* Button1.png in Resources */ = {isa = PBXBuildFile; fileRef = A40B95661C02C74F007C0D4D /* Button1.png */; };
@@ -75,16 +66,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		689A805E1C15848E002A8F0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		689A80601C15849D002A8F0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		689A80621C1584A7002A8F0B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		689A80641C1584C5002A8F0B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		689A80661C1584C9002A8F0B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		68A3803F1C163B5900AE6F2C /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = ../InfoPlist.strings; sourceTree = "<group>"; };
-		68A380411C16415100AE6F2C /* IMG_0683.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0683.JPG; sourceTree = SOURCE_ROOT; };
-		68A380431C1641C600AE6F2C /* IMG_0681.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0681.JPG; sourceTree = SOURCE_ROOT; };
-		68F0F75F1C15984400649F95 /* SQLiteDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SQLiteDemo-Info.plist"; path = "../SQLiteDemo-Info.plist"; sourceTree = "<group>"; };
-		68F0F7641C15986000649F95 /* SQLiteDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SQLiteDemo-Prefix.pch"; path = "../SQLiteDemo-Prefix.pch"; sourceTree = "<group>"; };
 		A40B95621C0294EF007C0D4D /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Background.jpg; path = ../Background.jpg; sourceTree = "<group>"; };
 		A40B95641C02ABC6007C0D4D /* Image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Image1.jpg; sourceTree = SOURCE_ROOT; };
 		A40B95661C02C74F007C0D4D /* Button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button1.png; sourceTree = SOURCE_ROOT; };
@@ -134,13 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				689A80651C1584C5002A8F0B /* libsqlite3.0.dylib in Frameworks */,
-				689A80631C1584A7002A8F0B /* CoreGraphics.framework in Frameworks */,
-				689A80611C15849D002A8F0B /* Foundation.framework in Frameworks */,
-				689A805F1C15848E002A8F0B /* UIKit.framework in Frameworks */,
 				A470AAF51C01550F00322851 /* CoreMotion.framework in Frameworks */,
 				A43FCC3C1BF1567000163A67 /* AddressBookUI.framework in Frameworks */,
-				689A80671C1584C9002A8F0B /* libsqlite3.dylib in Frameworks */,
 				A43FCC3A1BF1566000163A67 /* AddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,9 +150,6 @@
 		A45CA1351BEED390006F623A = {
 			isa = PBXGroup;
 			children = (
-				689A80621C1584A7002A8F0B /* CoreGraphics.framework */,
-				689A80601C15849D002A8F0B /* Foundation.framework */,
-				689A805E1C15848E002A8F0B /* UIKit.framework */,
 				A470AAF41C01550F00322851 /* CoreMotion.framework */,
 				A45CA1401BEED390006F623A /* phsyioFinal */,
 				A45CA15A1BEED390006F623A /* phsyioFinalTests */,
@@ -200,8 +173,6 @@
 			children = (
 				A43FCC391BF1566000163A67 /* AddressBook.framework */,
 				A45CA1441BEED390006F623A /* AppDelegate.h */,
-				689A80641C1584C5002A8F0B /* libsqlite3.0.dylib */,
-				689A80661C1584C9002A8F0B /* libsqlite3.dylib */,
 				A40B958C1C03A3C3007C0D4D /* CircleProgressView.h */,
 				A40B958E1C03A3D7007C0D4D /* CircleProgressView.m */,
 				A40B95901C03A3DE007C0D4D /* CircleShapeLayer.h */,
@@ -212,8 +183,8 @@
 				A40B956C1C039884007C0D4D /* Session.h */,
 				A40B956D1C03988F007C0D4D /* Session.m */,
 				A43FCC411BF158BB00163A67 /* Physician.m */,
-				A45CA1471BEED390006F623A /* ViewController.h */,
 				A43FCC3B1BF1567000163A67 /* AddressBookUI.framework */,
+				A45CA1471BEED390006F623A /* ViewController.h */,
 				A45CA1481BEED390006F623A /* ViewController.m */,
 				A45CA14A1BEED390006F623A /* Main.storyboard */,
 				A470AAF01C014D4200322851 /* Accelerometer.h */,
@@ -228,8 +199,6 @@
 				A45CA1741BEED819006F623A /* LoginMain.h */,
 				A45CA1751BEED81A006F623A /* LoginMain.m */,
 				A40B95641C02ABC6007C0D4D /* Image1.jpg */,
-				68A380431C1641C600AE6F2C /* IMG_0681.JPG */,
-				68A380411C16415100AE6F2C /* IMG_0683.JPG */,
 				A45CA14D1BEED390006F623A /* Assets.xcassets */,
 				A45CA14F1BEED390006F623A /* LaunchScreen.storyboard */,
 				A45CA1521BEED390006F623A /* Info.plist */,
@@ -242,9 +211,6 @@
 		A45CA1411BEED390006F623A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				68A3803F1C163B5900AE6F2C /* InfoPlist.strings */,
-				68F0F75F1C15984400649F95 /* SQLiteDemo-Info.plist */,
-				68F0F7641C15986000649F95 /* SQLiteDemo-Prefix.pch */,
 				A45CA1421BEED390006F623A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -396,19 +362,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68A380421C16415100AE6F2C /* IMG_0683.JPG in Resources */,
 				A45CA1511BEED390006F623A /* LaunchScreen.storyboard in Resources */,
-				68A380401C163B5900AE6F2C /* InfoPlist.strings in Resources */,
 				A43FCC441BF1728D00163A67 /* iphone.png in Resources */,
 				A43FCC461BF1753700163A67 /* Images.xcassets in Resources */,
-				68F0F7601C15984400649F95 /* SQLiteDemo-Info.plist in Resources */,
 				A40B95671C02C74F007C0D4D /* Button1.png in Resources */,
 				A40B95691C02CABE007C0D4D /* Button2.png in Resources */,
 				A45CA14E1BEED390006F623A /* Assets.xcassets in Resources */,
 				A40B95651C02ABC6007C0D4D /* Image1.jpg in Resources */,
 				A45CA14C1BEED390006F623A /* Main.storyboard in Resources */,
 				A40B95631C0294EF007C0D4D /* Background.jpg in Resources */,
-				68A380441C1641C600AE6F2C /* IMG_0681.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.view.backgroundColor = [UIColor colorWithRed:51/255.0 green:73/255.0 blue:93/255.0 alpha:1.0];
     
     self.session = [[Session alloc] init];
@@ -39,22 +40,22 @@
 
     self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"Background.jpg"]];
     // Do any additional setup after loading the view.
-    count=0;
-    count2=0;
-    count3=0;
-    number=0;
+    //count=0;
+    //count2=0;
+   // count3=0;
+    // number=0;
     currentaccx= 0;
     currentaccy= 0;
-    currentaccz = 0;
+   currentaccz = 0;
     
     currentrotx= 0;
     currentroty = 0;
-    currentrotz= 0;
-
+   currentrotz= 0;
+    
     
     self.motionManager = [[CMMotionManager alloc] init];
-    self.motionManager.accelerometerUpdateInterval = 0.18;
-    self.motionManager.gyroUpdateInterval = 0.18;
+    self.motionManager.accelerometerUpdateInterval = 0.2;
+    self.motionManager.gyroUpdateInterval = 0.2;
     
     [self.motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue currentQueue]
                                              withHandler:^(CMAccelerometerData *accelerometerData, NSError *error) {
@@ -166,7 +167,6 @@
     
     
 }
-
 -(void)outputRotationData:(CMRotationRate)rotation
 {
     
@@ -190,20 +190,15 @@
     self.maxrotationy.text = [NSString stringWithFormat:@" %.2f",degrees(currentroty)];
     self.maxrotationz.text = [NSString stringWithFormat:@" %.2f",degrees(currentrotz)];
     
-   
-    if (currentroty> (4.4))
+    if (currentroty> 4.4)
     {
-        NSLog(@"Counting :) ");
-        
          currentroty=0;
         self.maxrotationy.text = [NSString stringWithFormat:@" %.2f",currentroty];
-        float a= ((1.0)/(i));
-        count4=count4+a;
-        
-       // count4=count4-number;
+        count4=count4+1;
+        count4=count4-number;
         self.count4.text = [NSString stringWithFormat:@" %.2f",count4];
         
-
+        
     }
     else
     {
@@ -212,41 +207,24 @@
     }
     
      self.count4.text = [NSString stringWithFormat:@" %.2f",count4];
-    NSString *string=self.Target.text;
-    double d;
-    d=count4;
-    NSString*I;
-    I=[NSString stringWithFormat:@" %.2f",d];
-    double doubleVal = [_Target.text doubleValue];
-    NSString*U;
-    U=[NSString stringWithFormat:@" %.2f",doubleVal];
-    if (I==U)
-    {
-        _status2.text=@"Complete";
-        
-    }
-    else
-    {
-        _status2.text=@"In Progress";
-    }
+
     
     
     
-    if ((currentrotx)<-4.40)//3.40
+    if ((currentrotx)<-3.40)
     {
-        NSLog(@"Counted :)");
         currentrotx=0;
         self.maxrotationx.text = [NSString stringWithFormat:@" %.2f",currentrotx];
 
         count=count+1;
     }
-  /*  else if (count>5)
+    else if (count>5)
     {
         double a;
         a=count-5;
         count=count-a;
         
-    }*/
+    }
     
     
     self.count.text = [NSString stringWithFormat:@" %.2f",count];
@@ -277,6 +255,13 @@
         _Progress.progress=0.0;
         _status.text=@"NOT YET STARTED";
     }
+    
+    
+    
+    
+    
+    
+    
    
 }
 
@@ -370,16 +355,15 @@
 }
 
 - (IBAction)back:(id)sender {
-    i++;
-   // currentaccx = 0;
-   // currentaccy = 0;
-   // currentaccz = 0;
+    currentaccx = 0;
+    currentaccy = 0;
+    currentaccz = 0;
     
-   // currentrotx= 0;
-   // currentroty= 0;
-   // currentrotz = 0;
-   // count=0;
-   // count3=0;
+    currentrotx= 0;
+    currentroty= 0;
+    currentrotz = 0;
+    //count=0;
+    //count3=0;
 
 
     self.maxrotationx.text = [NSString stringWithFormat:@" %.2f",currentrotx];
@@ -395,45 +379,22 @@
 
 
 - (IBAction)Finish2:(id)sender {
-    double d;
-    d=count4;
-    NSString*I;
-    I=[NSString stringWithFormat:@" %.2f",d];
-    double doubleVal = [_Target.text doubleValue];
-    NSString*U;
-    U=[NSString stringWithFormat:@" %.2f",doubleVal];
-    if (I==U)
-    {
-        UIAlertView *ALERT1 =[[UIAlertView alloc] initWithTitle:(@"iPhsyio") message:(@"YOU MADE IT :)") delegate:(self) cancelButtonTitle:(@"OK") otherButtonTitles:nil];
-        [ALERT1 show];
-        
-    }
-    else{
-        UIAlertView *ALERT2 =[[UIAlertView alloc] initWithTitle:(@"iPhsyio") message:(@"YOU DIDNT MAKE IT :(") delegate:(self) cancelButtonTitle:(@"OK") otherButtonTitles:nil];
-        [ALERT2 show];
-        
-    }
 }
 
 - (IBAction)Back2:(id)sender {
-    i++;
-  //  number=number+1;
-  //  currentaccx = 0;
-  //  currentaccy = 0;
-  //  currentaccz = 0;
+    number=number+1;
+    currentaccx = 0;
+    currentaccy = 0;
+    currentaccz = 0;
     
-  //  currentrotx= 0;
-  //  currentroty= 0;
-  //  currentrotz = 0;
+    currentrotx= 0;
+    currentroty= 0;
+    currentrotz = 0;
      [self performSegueWithIdentifier:@"HOME111" sender:self];
     
 }
 
 
 
-
-- (IBAction)demo:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://youtu.be/Pt8qm40JfoY"]];
-}
 
 @end;

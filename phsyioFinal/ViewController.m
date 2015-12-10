@@ -12,12 +12,7 @@
 
 @end
 
-
 @implementation ViewController
-@synthesize usernameField;
-@synthesize passwordField;
-@synthesize confirmPassword;
-@synthesize status;
 
 - (void)viewDidLoad {
     
@@ -31,11 +26,10 @@
     else
     {
         NSLog(@"User is Registered");
-        confirmPassword.hidden=YES;
+        _confirmPassword.hidden=YES;
         _registerBtn.hidden=YES;
     }
     [self.usernameField resignFirstResponder];
-    [self.view endEditing:TRUE];
     
     // Do any additional setup after loading the view, typically from a nib.
     CAGradientLayer *btnGradient = [CAGradientLayer layer];
@@ -49,63 +43,10 @@
     [btnLayer setMasksToBounds:YES];
     [btnLayer setCornerRadius:5.0f];
     
-    NSString *docsDir;
-    NSArray *dirPaths;
-    
-    // Get the documents directory
-    dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    
-    docsDir = [dirPaths objectAtIndex:0];
-    
-    // Build the path to the database file
-    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"contacts.db"]];
-    
-    NSFileManager *filemgr = [NSFileManager defaultManager];
-    
-    if ([filemgr fileExistsAtPath:databasePath] == NO)
-    {
-        const char *dbpath = [databasePath UTF8String];
-        if (sqlite3_open(dbpath, &contactDB)==SQLITE_OK)
-        {
-            char *errMsg;
-            const char *sql_stmt = "CREATE TABLE IF NOT EXISTS CONTACTS(ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT, ADDRESS TEXT,PHONE TEXT)";
-            if (sqlite3_exec(contactDB, sql_stmt, NULL, NULL, &errMsg)!=SQLITE_OK) {
-                status.text = @"创建表失败\n";
-            }
-        }
-        else
-        {
-            status.text = @"创建/打开数据库失败";
-        }
-    }
-
-    
 }
 
 -(IBAction) RegisterUser:(id)sender{
-    sqlite3_stmt *statement;
-    
-    const char *dbpath = [databasePath UTF8String];
-    
-    if (sqlite3_open(dbpath, &contactDB)==SQLITE_OK) {
-        NSString *insertSQL = [NSString stringWithFormat:@"INSERT INTO CONTACTS (name,address,phone) VALUES(\"%@\",\"%@\",\"%@\")",usernameField.text,passwordField.text,confirmPassword.text];
-        const char *insert_stmt = [insertSQL UTF8String];
-        sqlite3_prepare_v2(contactDB, insert_stmt, -1, &statement, NULL);
-        if (sqlite3_step(statement)==SQLITE_DONE) {
-            status.text = @"Registered ";
-           // usernameField.text = @"";
-           // passwordField.text = @"";
-           // confirmPassword.text = @"";
-        }
-        else
-        {
-            status.text = @"Not Registered";
-        }
-        sqlite3_finalize(statement);
-        sqlite3_close(contactDB);
-    }
-
-    if ([usernameField.text isEqualToString:@""] || [passwordField.text isEqualToString:@""] || [confirmPassword.text isEqualToString:@""] ||[_AccountType.text isEqualToString:@""])
+    if ([_usernameField.text isEqualToString:@""] || [_passwordField.text isEqualToString:@""] || [_confirmPassword.text isEqualToString:@""] ||[_AccountType.text isEqualToString:@""])
     {
         UIAlertView *error =[[UIAlertView alloc] initWithTitle:(@"Login Error") message:(@"You must complete all the fields") delegate:(self) cancelButtonTitle:(@"OK") otherButtonTitles:nil];
         [error show];
@@ -124,7 +65,7 @@
 
 - (void) CheckifPasswordMatch
 {
-    if ([passwordField.text isEqualToString:confirmPassword.text])
+    if ([_passwordField.text isEqualToString:_confirmPassword.text])
     {
         NSLog(@"Passwords Match");
         [self Registernewuser];
@@ -143,8 +84,8 @@
 -(void) Registernewuser
 {
     NSUserDefaults * defaults= [NSUserDefaults standardUserDefaults];
-    [defaults setObject: usernameField.text forKey:@"Username"];
-    [defaults setObject: passwordField.text forKey:@"Password"];
+    [defaults setObject: _usernameField.text forKey:@"Username"];
+    [defaults setObject: _passwordField.text forKey:@"Password"];
     [defaults setObject: _FirstName.text forKey:@"FirstName"];
     [defaults setObject: _LastName.text forKey:@"LastName"];
     [defaults setObject: _Age.text forKey:@"Age"];
