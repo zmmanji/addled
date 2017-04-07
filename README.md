@@ -1,4 +1,5 @@
-# This is the workplace where we put all branches together
+
+# This file shows all the branches we put together.
 # Create your own branch under this repository and make sure them work first
 # Finish both interface and logic code
 # Individual parts should be finished by Friday midnight
