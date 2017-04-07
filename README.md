@@ -7,8 +7,8 @@
 # Christy
 # Application icon
 # Single session screen
-# Excercies assigning screen
-# Excercies progress tracking
+# Exercises assigning screen
+# Exercises progress tracking
 
 
 
