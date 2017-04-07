@@ -1,5 +1,5 @@
 # This is the workplace where we put all branches together
-# Create your own branch under this repository and make sure them work first
+# Create your own branch under this repository ,and make sure your function works before adding to the list.
 # Finish both interface and logic code
 # Individual parts should be finished by Friday midnight
 
